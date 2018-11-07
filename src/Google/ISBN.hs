@@ -12,6 +12,7 @@
 module Google.ISBN (
   ISBN
   , GoogleISBN
+  , Book
   , googleISBN
   ) where
 
