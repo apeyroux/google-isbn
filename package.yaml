@@ -1,0 +1,21 @@
+name: google-isbn
+version: 0.1
+github: apeyroux/google-isbn
+author: Alexandre Peyroux
+maintainer: alex@px.io
+category: Text, Web
+license: BSD3
+description: Basic utility to search an ISBN using the Google Books webservice
+
+
+library:
+  source-dirs: src
+  ghc-options: -Wall
+  dependencies:
+    - aeson
+    - base >= 4.2 && < 5
+    - bytestring
+    - conduit
+    - conduit-extra
+    - http-conduit
+    - text
