@@ -5,6 +5,7 @@ Basic utility to search an ISBN using the Google Books webservice
 
 import Google.ISBN
 
-googleISBN (ISBN "9782757843260")
+main :: IO ()
+main = print $ googleISBN (ISBN "9782757843260")
 ```
 
