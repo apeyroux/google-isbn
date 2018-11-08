@@ -10,7 +10,7 @@
 --
 
 module Google.ISBN (
-  ISBN
+  ISBN (..)
   , GoogleISBN (..)
   , Book (..)
   , googleISBN

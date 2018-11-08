@@ -2,10 +2,10 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 1e1e64f60e4f08b7103b3d444a76b6af01b0f53da482e070e9a65de401bd499a
+-- hash: 9c71c499b66014185b6b73de473fe9c0db1a158302c47c5391678c4aae9d872d
 
 name:           google-isbn
-version:        1.0.0
+version:        1.0.2
 description:    Basic utility to search an ISBN using the Google Books webservice
 category:       Text, Web
 homepage:       https://github.com/apeyroux/google-isbn#readme
