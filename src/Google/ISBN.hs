@@ -34,7 +34,7 @@ data GoogleISBN = GoogleISBN {
 
 data Book = Book {
   bookTitle :: T.Text
-  , bookSubtitle :: T.Text
+  , bookSubtitle :: Maybe T.Text
   , bookPublisher :: Maybe T.Text
   , bookDescription :: T.Text
   , bookPublishedDate :: T.Text
@@ -45,7 +45,7 @@ data Book = Book {
 instance FromJSON Book where
   parseJSON (Object v) = (v .: "volumeInfo") >>= \b -> Book
     <$> b .: "title"
-    <*> b .: "subtitle"
+    <*> b .:? "subtitle"
     <*> b .:? "publisher"
     <*> b .: "description"
     <*> b .: "publishedDate"
